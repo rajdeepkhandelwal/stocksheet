@@ -11,8 +11,8 @@ var express = require("express"),
     passportLocalStrategy=require("passport-local-mongoose");
     
     
-// mongoose.connect("mongodb://localhost/datasheet",{ useNewUrlParser: true });    
-mongoose.connect("mongodb://rajdeep:cgraj123@ds127115.mlab.com:27115/datasheet",{ useNewUrlParser: true });
+mongoose.connect(process.env.DATABASEURL,{ useNewUrlParser: true });    
+// mongoose.connect("mongodb://rajdeep:cgraj123@ds127115.mlab.com:27115/datasheet",{ useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine","ejs");
