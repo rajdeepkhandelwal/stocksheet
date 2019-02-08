@@ -1,0 +1,64 @@
+<% include partials/headerfront %>
+
+<h2 id='heaitdetails' style="margin-left: 45%;margin-top:10%;">Edit Details</h2>
+<form action="/cars/<%=cars._id%>?_method=PUT" method="POST" style="margin-left: 40%;margin-top: 2%;">
+   <div id="container1">
+      
+    <div class="form-group row" >
+    <label for="regno" class="col-sm-2 col-form-label">Reg.No.</label>
+    <div class="col-sm-10">
+    <input type="text" id="regno" class="form-control mr-sm-2"  name="car[regNo]" style="width:30%;"    value="<%=cars.regNo%>" required>
+    </div>
+    </div>
+    <div class="form-group row">
+        <label for="carName"  class="col-sm-2 col-form-label">Car Name</label>
+         <div class="col-sm-10">
+    <input type="text" id="carname" class="form-control mr-sm-2"  name="car[carName]"   style="width:30%;"  value="<%=cars.carName%>" required>
+      </div>
+    </div>
+      <div class="form-group row">
+        <label for="comapany"  class="col-sm-2 col-form-label">Company</label>
+         <div class="col-sm-10">
+    <input type="text" id="myinput" class="form-control mr-sm-2 myinput"   style="width:30%;"   name="car[company]"  value="<%=cars.company%>" required>
+          </div>
+    </div>
+        <div class="form-group row">
+        <label for="cost"  class="col-sm-2 col-form-label">Cost</label>
+         <div class="col-sm-10">
+    <input type="number" id="cost" class="form-control mr-sm-2"  name="car[cost]"  style="width:30%;"      value="<%=cars.cost%>" required>
+          </div>
+    </div>
+        <div class="form-group row">
+        <label for="kms"  class="col-sm-2 col-form-label">KM Driven</label>
+         <div class="col-sm-10"> 
+    <input type="number" id="kms" class="form-control mr-sm-2"  name="car[kms]"   style="width:30%;"       value="<%=cars.kms%>" required>
+          </div>
+    </div>
+        <div class="form-group row">
+        <label for="location"  class="col-sm-2 col-form-label">Location</label>
+         <div class="col-sm-10">
+    <input type="text" id="location" class="form-control mr-sm-2"   name="car[location]"   style="width:30%;"  value="<%=cars.location%>" required>
+          </div>
+    </div>
+       <div id="divinsurance" class="form-group row" >
+    <div class="col-sm-4">
+  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Insurance</label>
+  <select class="custom-select my-1 mr-sm-2" name="car[insurance]" id="inlineFormCustomSelectPref" required>
+    <option selected><%=cars.insurance%></option>
+    <option value="Expired">Expired</option>
+    <option value="Comphrensive">Comphrensive</option>
+    <option value="Third-Party">Third-Party</option>
+  </select>
+    </div>
+    </div>
+    
+    <input type="submit" class="btn btn-primary" value="submit">
+    
+    </div>
+</form>
+
+<script type="text/javascript" src="/js/search.js"></script>
+
+
+
+<% include partials/footer %>

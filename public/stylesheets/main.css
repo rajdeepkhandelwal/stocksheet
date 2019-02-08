@@ -1,0 +1,213 @@
+#container1
+{
+    margin-right: 2%
+}
+#container1 .form-control.mr-sm-2
+{
+      width: 25%; 
+      /*padding: 1%;*/
+    
+}
+#inlineFormCustomSelectPref
+{
+   width: 135%;      
+}
+
+.table.table-hover{
+      
+      
+     width:85%;
+     margin:20px;
+     text-align:center; 
+}
+
+#divsearch{
+      
+      /*display:inline;*/
+      margin-top:2%;
+      margin-left:2%;
+    padding-left: 40%;
+}
+#hadddetails{
+     margin-top:2%;
+     margin-left:45%;
+}
+
+
+#hpllogin{
+     margin-top:2%;
+     margin-left:45%;
+}
+#container2{
+    margin-left: 40%;
+    margin-top: 5%;
+    
+}
+
+#loginbtn{
+       margin-left: 33%;
+       margin-top: 5%;
+}
+
+#cgheader{
+    /*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
+    font:"Lobster Two", Helvetica, sans-serif;
+    font-size: -webkit-xxx-large;
+    margin-top: -15%;
+    margin-left: 10%;
+    /*color: #1e73be;*/
+    color:white;
+}
+
+.parallax { 
+ 
+  background-image: url("/images/jeep1.jpg");
+
+ 
+  height: 700px; 
+
+ 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.autocomplete {
+  box-sizing: border-box;
+}
+#btnsearchh{
+     background-color:white;
+    border-color:#e0e4e8;;
+     /*border-color:white;*/
+        height: 35px;
+        /*border: none;*/
+    
+}
+#btndelete{
+     background-color:white;
+    border-color:grey;
+     /*border-color:white;*/
+        height: 35px;
+    border: none;
+}
+#btnedit{
+     background-color:white;
+    /*border-color:grey;*/
+     /*border-color:white;*/
+        height: 35px;
+    /*border: none;*/
+}
+.material-icons.md-dark { 
+    
+    color: rgba(0, 0, 0, 0.54); 
+    
+}
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  width: 30%;
+  border-right: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
+/*#vssbtn{*/
+/*    margin-top: -4%;*/
+/*    margin-left: 80%*/
+/*}*/
+
+#btnadmin{
+    border-radius: 50%;
+    
+    
+}
+/*#heaitdetails{*/
+    
+/*    margin-left: 45%;*/
+/*    margin-top: 5%;*/
+    
+/*}*/
+
+
+#cgheader1{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: -webkit-xxx-large;
+    margin-top:10%;
+    /*margin-left: 10%;*/
+    color: #1e73be;
+    /*color:black;*/
+}
+#cgheader2{
+  margin-left: 2%;
+    
+}
+#cgheader3{
+     margin-left: -25%;
+}
+#cgheader4{
+    margin-left: 90%;
+}
+#cgheader5{
+  
+    font-size: -webkit-xxx-large;
+    color: #178bce;
+
+}
+
+#img1{
+  margin-top: 10%;
+  height: 300px;
+  margin-left: -25%;
+}
+#img2{
+    height: 250px;
+    margin-top: 30%;
+    margin-left: -50%;}
+#img3{
+    height: 200px;
+    margin-left: 55%;
+    margin-top: 35%;
+    
+}
+#pfooter{
+    
+    color: white;
+}
+#btncars{
+    
+    height: 60px;
+    width: 20%;
+    margin-left: 75%;
+    margin-top: -5%;
+}
+#footernav{
+    margin-top: -20%;
+}

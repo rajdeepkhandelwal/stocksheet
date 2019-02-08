@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta http-equiv="pragma" content="no-cache" />
+
+        <title>stockSheet</title>
+       <link rel="shortcut icon" type="image/png"
+     href="images/Cg-logo.png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet"  type="text/css" href="./stylesheets/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    </head>
+    <body>
+          <!--<nav class="navbar fixed-top navbar-dark bg-dark">-->
+          <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">
+                <img src="/images/Cg-logo.png" alt="Brand-image" style="height:2.5em;">
+            </a>
+                    <% if(currentUser){%>   
+                        <h5 style="color:white;text-align:center;text-transform: capitalize;"><i>Welcome </i><kbd><%= currentUser.username%></kbd></h5>
+                    <% } %>
+             <form class="form-inline navbar-right">
+                      <a class="nav-link" href="/cars">Stocksheet  </a>
+                      <!--<a class="nav-link" href="/admin">New-Stock   </a>-->
+                      <!--<a class="nav-link" href="https://datasheet-classygeek.c9users.io/adcars">Stocksheet</a>-->
+                   <% if(!currentUser){%>
+                    <a href="/admin" title="admin"><i class="material-icons" id="Admin">person_outline</i></a>
+                    <% } %>
+                    <% if(currentUser){ %>
+                       <a href="/logout" class="nav-link" >Logout</a>  
+                      <% }%> 
+                 </form>
+          </nav>
+          <div id="divsearch">
+             <form class="form-inline my-2 my-lg-0" action="/getdata" method="GET">
+                 <input class="form-control mr-sm-2" type="search" name="search" placeholder="eg:company,car" aria-label="Search">
+                 <button class="btn btn-primary" id="btnsearchh" type="submit"><i class="material-icons md-dark" >search</i></button>
+              </form>
+          </div>
+    
+     

@@ -1,0 +1,49 @@
+<% include partials/header %>
+<!--<a href="/admin" ><button class="btn btn-primary" id="vssbtn">Add-Stock</button></a>-->
+
+          
+        <div class="container">
+            <!--<table class="table table-hover" id="tblcar" border=1 width="85%" style="margin:20px;text-align:center">-->
+             <table border=1 width="90%" style="margin:20px;text-align:center">
+            <tr>
+                <th>Reg No.</th>
+                <th>Car Name</th>
+                <th>Company</th>
+                <th>Cost</th>
+                <th>Kms Driven</th>
+                <th>Location</th>
+                <th>Insurance</th>
+            <% if(currentUser){%>    
+                <th>Delete</th>
+                <th>Edit</th>
+            <% } %>    
+            </tr>
+            <% cars.forEach(function(car){ %>
+                <tr>
+                    <td><%= car.regNo %></td>
+                    <td><%=car.carName %></td>
+                    <td><%= car.company%></td>
+                    <td><%=car.cost %></td>
+                    <td><%=car.kms%></td>
+                    <td><%=car.location%></td>
+                    <td><%=car.insurance%></td>
+                <% if(currentUser){%>
+                
+                    <td>
+                        <form action="/cars/<%=car._id%>?_method=DELETE" method="POST">
+                            <button class="btn btn-xs" id="btndelete" ><i class="material-icons">delete_outline</i></button>
+                        </form>
+                    </td>
+                    <td>
+                      <a href="/cars/<%=car._id%>/edit">
+                          <button class="btn btn-xs" id="btnedit"  ><i class="material-icons">create</i></button>
+                      </a>
+                    </td>
+                    <% } %>
+                </tr>
+            <%  }) %>
+        </table>
+        </div>
+   
+      
+<% include partials/footer %>

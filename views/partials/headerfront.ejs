@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>stockSheet</title>
+      <link rel="shortcut icon" type="image/png"
+     href="images/Cg-logo.png" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet"  type="text/css" href="/stylesheets/main.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+       
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   </head>
+    <body>
+        
+         <div>
+          <!--<nav class="navbar fixed-top navbar-dark bg-dark">-->
+           <nav class="navbar navbar-dark bg-dark">
+             <a class="navbar-brand" href="/"><img src="/images/Cg-logo.png" alt="Brand-image" style="height:2.5em;"></a>
+                    <% if(currentUser){%>   
+                       <h5 style="color:white;text-align:center;text-transform: capitalize;"><i>Welcome </i><kbd><%= currentUser.username%></kbd></h4>
+                    <% }%>
+            <form class="form-inline navbar-right">
+                      <!--<a class="nav-link" href="/adcars">Stocksheet    </a>-->
+                      <!--<a class="nav-link" href="https://datasheet-classygeek.c9users.io/admin">New-Stock   </a>-->
+                      <!--<a class="nav-link" href="https://datasheet-classygeek.c9users.io/adcars">Stocksheet</a>-->
+                    <% if(!currentUser){%>
+                    <a href="/admin" ><i class="material-icons" title="Admin">person_outline</i></a>
+                    <% } %>
+                   <% if(currentUser){ %>
+                        <a href="/logout" class="form-link" >Logout</a>  
+                  <% } %>
+                 </form>
+            
+        <!--<a href="/adminpanel" ><button type="button" class="btn btn-primary" id="btnadmin"><i class="material-icons">person_outline</i></button></a> -->
+    </div>  
+          </nav>
+          
+    
+         
