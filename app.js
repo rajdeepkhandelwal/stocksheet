@@ -9,7 +9,11 @@ var express = require("express"),
     passport =require("passport"),
     LocalStrategy = require("passport-local"),
     passportLocalStrategy=require("passport-local-mongoose");
-mongoose.connect("mongodb://localhost/datasheet",{ useNewUrlParser: true });    
+    
+    
+// mongoose.connect("mongodb://localhost/datasheet",{ useNewUrlParser: true });    
+mongoose.connect("mongodb://rajdeep:cgraj123@ds127115.mlab.com:27115/datasheet",{ useNewUrlParser: true });
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine","ejs");
 app.use(express.static(__dirname + '/public'));
